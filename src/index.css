@@ -210,9 +210,13 @@ button:active, .btn:active {
   }
 }
 .glass-effect.rounded-2xl.p-8.md\:p-12.mb-16 {
-    text-align-last: center;
+    justify-items: center;
 }
 
 .glass-effect.rounded-2xl.p-8.overflow-x-auto {
     text-align-last: center;
+}
+
+.h-full.w-full.flex-1.bg-primary.transition-all {
+    background-color: #d121d1;
 }
