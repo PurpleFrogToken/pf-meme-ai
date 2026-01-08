@@ -42,9 +42,6 @@ export default function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button className="gradient-bg hover:opacity-90 transition-opacity font-heading">
-              Connect Wallet
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,9 +66,6 @@ export default function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button className="w-full gradient-bg hover:opacity-90 transition-opacity font-heading">
-              Connect Wallet
-            </Button>
           </div>
         )}
       </div>
