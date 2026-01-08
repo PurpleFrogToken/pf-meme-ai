@@ -220,3 +220,7 @@ button:active, .btn:active {
 .h-full.w-full.flex-1.bg-primary.transition-all {
     background-color: #d121d1 !important;
 }
+
+.glass-effect.rounded-2xl.p-8 {
+    justify-items: center !important;
+}
