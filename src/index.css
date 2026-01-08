@@ -210,13 +210,13 @@ button:active, .btn:active {
   }
 }
 .glass-effect.rounded-2xl.p-8.md\:p-12.mb-16 {
-    justify-items: center;
+    justify-items: center !important;
 }
 
 .glass-effect.rounded-2xl.p-8.overflow-x-auto {
-    text-align-last: center;
+    text-align-last: center !important;
 }
 
 .h-full.w-full.flex-1.bg-primary.transition-all {
-    background-color: #d121d1;
+    background-color: #d121d1 !important;
 }
