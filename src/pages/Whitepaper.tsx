@@ -45,10 +45,6 @@ export default function Whitepaper() {
             <p className="text-sm text-gray-500 mb-8">
               Version 1.0 | January 2026 | MEME + AI + Community Protocol
             </p>
-            <Button className="gradient-bg hover:opacity-90 transition-all hover:scale-105 font-heading text-lg px-8 py-6">
-              <Download className="mr-2" size={20} />
-              Download PDF
-            </Button>
           </div>
 
           {/* Quote */}
