@@ -678,10 +678,7 @@ export default function Whitepaper() {
                 </div>
               </div>
               
-              <Button className="gradient-bg hover:opacity-90 transition-all font-heading px-8 py-6 text-lg">
-                <Download className="mr-2" size={20} />
-                Download Complete Whitepaper PDF (50+ Pages)
-              </Button>
+            
               
               <p className="text-sm text-gray-500 mt-6">
                 Full technical documentation, legal disclaimers, and risk disclosures included in PDF version
