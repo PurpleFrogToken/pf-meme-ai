@@ -21,9 +21,9 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img 
-              src="https://mgx-backend-cdn.metadl.com/generate/images/710370/2026-01-07/5c7f87a6-8cbc-4b12-b0e1-0e160c105be3.png" 
+              src="/assets/LOGO1.jpg" 
               alt="PF Logo" 
-              className="w-12 h-12 rounded-lg"
+              className="w-12 h-12 rounded-lg object-cover"
             />
             <div>
               <h1 className="font-heading font-bold text-2xl gradient-text">PF</h1>

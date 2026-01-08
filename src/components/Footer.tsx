@@ -2,16 +2,16 @@ import { Twitter, MessageCircle, Send, Github, FileText, Map, BookOpen } from 'l
 
 export default function Footer() {
   return (
-    <footer className="glass-effect border-t border-accent/20 py-12">
+    <footer className="glass-effect border-t border-accent/20 py-8 mt-auto">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-6">
           {/* Logo & Tagline */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="https://mgx-backend-cdn.metadl.com/generate/images/710370/2026-01-07/5c7f87a6-8cbc-4b12-b0e1-0e160c105be3.png" 
+                src="https://mgx-backend-cdn.metadl.com/generate/images/710370/2026-01-08/cbfffa51-3bfc-4116-8e71-e5ed182f8c64.png" 
                 alt="PF Logo" 
-                className="w-12 h-12 rounded-lg"
+                className="w-12 h-12 rounded-lg object-cover"
               />
               <div>
                 <h3 className="font-heading font-bold text-2xl gradient-text">PF</h3>
@@ -97,7 +97,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-accent/20 pt-8 text-center">
+        <div className="border-t border-accent/20 pt-6 text-center">
           <p className="text-gray-400 text-sm mb-2">
             © 2026 PF Community. All rights reserved.
           </p>

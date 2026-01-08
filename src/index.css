@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,9 +28,10 @@ body {
   overflow-x: hidden;
   position: relative;
   perspective: 1000px;
+  min-height: 100vh;
 }
 
-/* Animated background grid */
+/* Animated wave pattern background - REPLACED GRID */
 body::before {
   content: '';
   position: fixed;
@@ -37,12 +39,24 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
-  background-size: 50px 50px;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.03) 0%, transparent 25%);
   pointer-events: none;
   z-index: 0;
+  animation: wave-shift 15s ease-in-out infinite;
+}
+
+@keyframes wave-shift {
+  0%, 100% { 
+    background-position: 0% 0%, 100% 100%, 50% 50%;
+    opacity: 1;
+  }
+  50% { 
+    background-position: 100% 100%, 0% 0%, 60% 40%;
+    opacity: 0.8;
+  }
 }
 
 /* Floating orbs background */
@@ -74,6 +88,13 @@ h1, h2, h3, h4, h5, h6 {
 
 code, pre {
   font-family: 'JetBrains Mono', monospace;
+}
+
+/* Fix footer overflow */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @layer utilities {
@@ -357,11 +378,7 @@ button:active, .btn:active {
   scrollbar-color: rgba(99, 102, 241, 0.5) rgba(0, 0, 0, 0.3);
 }
 
-/* Dot pattern overlay */
-.dot-pattern {
-  background-image: radial-gradient(rgba(99, 102, 241, 0.15) 1px, transparent 1px);
-  background-size: 20px 20px;
-}
+/* Dot pattern overlay - REMOVED, using waves instead */
 
 /* Noise texture overlay */
 .noise-texture {
@@ -405,10 +422,6 @@ img {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  body::before {
-    background-size: 30px 30px;
-  }
-  
   /* Reduce 3D effects on mobile */
   .card-glass:hover {
     transform: translateY(-4px) scale(1.01);

@@ -1,12 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background Pattern */}
-      <div className="absolute inset-0 dot-pattern opacity-30" />
-
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent-pink/10" />
 
@@ -29,12 +27,14 @@ export default function Hero() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <Button 
-                  size="lg" 
-                  className="gradient-bg hover:opacity-90 transition-all hover:scale-105 font-heading text-lg px-8 py-6 relative overflow-hidden"
-                >
-                  Read Whitepaper
-                </Button>
+                <Link to="/whitepaper">
+                  <Button 
+                    size="lg" 
+                    className="gradient-bg hover:opacity-90 transition-all hover:scale-105 font-heading text-lg px-8 py-6 relative overflow-hidden w-full sm:w-auto"
+                  >
+                    Read Whitepaper
+                  </Button>
+                </Link>
                 <Button 
                   size="lg" 
                   variant="outline" 
