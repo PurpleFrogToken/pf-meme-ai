@@ -70,7 +70,7 @@ export default function Footer() {
             <h4 className="font-heading font-semibold text-lg mb-4">Follow Us</h4>
             <div className="flex gap-4">
               <a 
-                href="#" 
+                href="https://x.com/PurpleFrogToken" 
                 className="w-10 h-10 rounded-full card-glass flex items-center justify-center hover:bg-accent/20 transition-colors"
               >
                 <Twitter size={20} />
