@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="https://mgx-backend-cdn.metadl.com/generate/images/710370/2026-01-08/cbfffa51-3bfc-4116-8e71-e5ed182f8c64.png" 
+                src="/assets/200x200xLogoPF.jpg"
                 alt="PF Logo" 
                 className="w-12 h-12 rounded-lg object-cover"
               />
