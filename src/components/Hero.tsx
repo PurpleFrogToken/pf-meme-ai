@@ -35,13 +35,20 @@ export default function Hero() {
                     Read Whitepaper
                   </Button>
                 </Link>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-2 border-accent/30 bg-transparent hover:bg-accent/10 backdrop-blur-sm font-heading text-lg px-8 py-6"
-                >
-                  Join Community
-                </Button>
+              <Button
+                      asChild
+                      size="lg"
+                      variant="outline"
+                      className="border-2 border-accent/30 bg-transparent hover:bg-accent/10 backdrop-blur-sm font-heading text-lg px-8 py-6"
+                    >
+                      <a
+                        href="https://t.me/PurpleFrogToken"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Join Community
+                      </a>
+                    </Button>
               </div>
             </div>
 
