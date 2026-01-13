@@ -21,7 +21,7 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img 
-              src="/assets/LOGO1.jpg" 
+              src="/assets/200x200xLogoPF.jpg" 
               alt="PF Logo" 
               className="w-12 h-12 rounded-lg object-cover"
             />
