@@ -1,4 +1,5 @@
 import { Twitter, MessageCircle, Send, Github, FileText, Map, BookOpen } from 'lucide-react';
+import { FaTelegramPlane } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -74,11 +75,12 @@ export default function Footer() {
               >
                 <Twitter size={20} />
               </a>
+
               <a 
-                href="#" 
+                href="https://t.me/PurpleFrogToken" 
                 className="w-10 h-10 rounded-full card-glass flex items-center justify-center hover:bg-accent/20 transition-colors"
               >
-                <MessageCircle size={20} />
+                <FaTelegramPlane size={20} />
               </a>
               <a 
                 href="#" 
@@ -87,7 +89,7 @@ export default function Footer() {
                 <Send size={20} />
               </a>
               <a 
-                href="#" 
+                href="https://github.com/PurpleFrogToken" 
                 className="w-10 h-10 rounded-full card-glass flex items-center justify-center hover:bg-accent/20 transition-colors"
               >
                 <Github size={20} />
