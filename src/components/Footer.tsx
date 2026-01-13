@@ -1,5 +1,4 @@
-import { Twitter, MessageCircle, Send, Github, FileText, Map, BookOpen } from 'lucide-react';
-import { FaTelegramPlane } from "react-icons/fa";
+import { Twitter, Send, Github, FileText, Map, BookOpen } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -76,14 +75,26 @@ export default function Footer() {
                 <Twitter size={20} />
               </a>
 
+              <a
+                    href="https://t.me/PurpleFrogToken"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full card-glass flex items-center justify-center hover:bg-accent/20 transition-colors"
+                    aria-label="Telegram"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 240 240"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                    >
+                      <path d="M120 0C53.7 0C53.7 120 0 120s53.7 120 120 120 120-53.7 120-120S186.3 0 120 0zm58.5 82.8l-19.9 94c-1.5 6.7-5.4 8.3-11 5.2l-30.4-22.4-14.7 14.1c-1.6 1.6-3 3-6.1 3l2.2-31.2 56.8-51.3c2.5-2.2-.5-3.4-3.9-1.2L87 133.4 56.7 123.9c-6.6-2-6.7-6.6 1.4-9.8l118.3-45.6c5.5-2 10.3 1.3 8.1 14.3z"/>
+                    </svg>
+                  </a>
+
               <a 
-                href="https://t.me/PurpleFrogToken" 
-                className="w-10 h-10 rounded-full card-glass flex items-center justify-center hover:bg-accent/20 transition-colors"
-              >
-                <FaTelegramPlane size={20} />
-              </a>
-              <a 
-                href="#" 
+                href="mailto:support@pf-ai.org" 
                 className="w-10 h-10 rounded-full card-glass flex items-center justify-center hover:bg-accent/20 transition-colors"
               >
                 <Send size={20} />
